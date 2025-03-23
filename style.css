@@ -1,0 +1,189 @@
+body.black-white {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #333, #111); /* Dark grey to black */
+    color: #eee; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .black-white .container {
+    background: rgba(255, 255, 255, 0.05); /* Very subtle glass effect */
+    border-radius: 25px;
+    padding: 50px;
+    width: 90%;
+    max-width: 650px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    backdrop-filter: blur(15px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInContainer 0.6s ease-out forwards 0.3s;
+  }
+  
+  @keyframes fadeInContainer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .black-white .weather_header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .black-white .weather_search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 35px;
+    padding: 12px 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .black-white .weather_search:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .black-white .weather_search i {
+    color: #eee;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_search i:hover {
+    transform: scale(1.1);
+  }
+  
+  .black-white .city_name {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #eee;
+    font-size: 1.1em;
+    width: 100%;
+  }
+  
+  .black-white .city_name::placeholder {
+    color: rgba(238, 238, 238, 0.7);
+  }
+  
+  .black-white .weather_body {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .black-white .weather_city {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_city:hover {
+    transform: scale(1.05);
+  }
+  
+  .black-white .weather_date_time {
+    font-size: 1.1em;
+    color: rgba(238, 238, 238, 0.8);
+    margin-bottom: 25px;
+  }
+  
+  .black-white .weather_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .black-white .weather_forecast {
+    font-size: 1.8em;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_forecast:hover {
+    transform: translateY(-5px);
+  }
+  
+  .black-white .weather_icon img {
+    width: 90px;
+    height: 90px;
+    filter: grayscale(100%); /* Grayscale icons */
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_icon img:hover {
+    transform: rotate(10deg);
+  }
+  
+  .black-white .weather_temperature {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Stronger text shadow */
+  }
+  
+  .black-white .weather_minmax {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .black-white .weather_min,
+  .black-white .weather_max {
+    font-size: 1.1em;
+    margin: 0 15px;
+    color: rgba(238, 238, 238, 0.8);
+  }
+  
+  .black-white .weather_info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+  }
+  
+  .black-white .weather_card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .black-white .weather_card i {
+    font-size: 2.2em;
+    color: #eee;
+    transition: transform 0.3s ease;
+  }
+  
+  .black-white .weather_card i:hover {
+    transform: scale(1.2);
+  }
+  
+  .black-white .weather_card div {
+    text-align: left;
+  }
+  
+  .black-white .weather_card div p:first-child {
+    font-size: 1em;
+    color: rgba(238, 238, 238, 0.7);
+  }
+  
+  .black-white .weather_card div p:last-child {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #eee;
+  }

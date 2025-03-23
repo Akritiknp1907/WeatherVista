@@ -1,0 +1,188 @@
+body.yellow-theme {
+    font-family: 'Poppins', sans-serif; /* A clean, modern font */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Yellow to golden-yellow gradient */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .yellow-theme .container {
+    background: rgba(255, 255, 255, 0.2); /* Light, semi-transparent background */
+    border-radius: 25px;
+    padding: 50px;
+    width: 90%;
+    max-width: 650px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInContainer 0.6s ease-out forwards 0.3s;
+  }
+  
+  @keyframes fadeInContainer {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .yellow-theme .weather_header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .yellow-theme .weather_search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque search bar */
+    border-radius: 35px;
+    padding: 12px 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .yellow-theme .weather_search:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .yellow-theme .weather_search i {
+    color: #333;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_search i:hover {
+    transform: scale(1.1);
+  }
+  
+  .yellow-theme .city_name {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 1.1em;
+    width: 100%;
+  }
+  
+  .yellow-theme .city_name::placeholder {
+    color: rgba(51, 51, 51, 0.7);
+  }
+  
+  .yellow-theme .weather_body {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .yellow-theme .weather_city {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_city:hover {
+    transform: scale(1.05);
+  }
+  
+  .yellow-theme .weather_date_time {
+    font-size: 1.1em;
+    color: rgba(51, 51, 51, 0.8);
+    margin-bottom: 25px;
+  }
+  
+  .yellow-theme .weather_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .yellow-theme .weather_forecast {
+    font-size: 1.8em;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_forecast:hover {
+    transform: translateY(-5px);
+  }
+  
+  .yellow-theme .weather_icon img {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_icon img:hover {
+    transform: rotate(10deg);
+  }
+  
+  .yellow-theme .weather_temperature {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  }
+  
+  .yellow-theme .weather_minmax {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .yellow-theme .weather_min,
+  .yellow-theme .weather_max {
+    font-size: 1.1em;
+    margin: 0 15px;
+    color: rgba(51, 51, 51, 0.8);
+  }
+  
+  .yellow-theme .weather_info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+  }
+  
+  .yellow-theme .weather_card {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque cards */
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .yellow-theme .weather_card i {
+    font-size: 2.2em;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .yellow-theme .weather_card i:hover {
+    transform: scale(1.2);
+  }
+  
+  .yellow-theme .weather_card div {
+    text-align: left;
+  }
+  
+  .yellow-theme .weather_card div p:first-child {
+    font-size: 1em;
+    color: rgba(51, 51, 51, 0.7);
+  }
+  
+  .yellow-theme .weather_card div p:last-child {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+  }
